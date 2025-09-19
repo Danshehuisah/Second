@@ -107,7 +107,7 @@ p {
 .hero-content h1 {
   font-size: clamp(2rem, 5vw, 3.5rem);
   margin-bottom: 1rem;
-  -webkit-text-stroke: 0.3px var(--white);
+  /* -webkit-text-stroke: 0.3px var(--white); */
 }
 
 .hero-content p {
