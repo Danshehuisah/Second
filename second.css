@@ -56,6 +56,7 @@ p {
   text-decoration: none;
   font-weight: 600;
   transition: 0.3s;
+  border: none;
 }
 
 .btn:hover {
@@ -219,14 +220,103 @@ p {
 }
 
 .about-image img {
-  width: 100%;  
+  width: 100%;
+  height: 100%;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.541);
 }
 .about-text span{ 
   color: var(--accent); 
   font-weight: 600;
  }
+
+ /* About.html page styling */
+.CEO-info {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.ceo-img-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.541);
+}
+.ceo-img-container  {
+  flex: 1;
+  min-width: 280px;
+}
+.CEO-info h1 {
+  color: var(--white);
+  text-align: center;
+}
+ .CEO-info h2, .CEO-info h3 {
+  color: var(--primary);
+  text-align: center;
+  position: relative;
+  /* z-index: 3; */
+}
+
+.ceo-text {
+  flex: 1;
+  min-width: 280px;
+  text-align: justify;
+  /* position: relative; */
+  /* z-index: 7; */
+  
+}
+.CEO-info span{ 
+  color: var(--accent); 
+  font-weight: 600;
+ }
+
+
+.CEO-competence {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2.5rem;
+  padding: 1rem;
+  /* position: relative; */
+  color: black;
+  /* z-index: 8; */
+  /* position: relative; */
+}
+  .CEO-competence ul {
+    list-style-type: none;
+    /* position: relative; */
+    /* z-index: 3; */
+  }
+
+
+ .CEO-info li::before {
+  content: "✔ ";
+  color: var(--accent);
+  font-weight: bold;
+  z-index: 6;
+}
+
+.ceo-serv {
+  position: relative;
+  z-index: 1;
+  padding: 10px;
+  
+}
+.ceo-serv::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #f5f5f588;
+  /* z-index: ; */
+  border-radius: 30px;
+}
+.ceo-serv p, ul {
+  position: relative;
+  z-index: 5;
+}
+
 
 /* Services Section */
 .services {
@@ -294,10 +384,12 @@ p {
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 1rem;
-  background: rgba(26, 43, 76, 0.7);
+  background: rgba(26, 43, 76, 0.897);
   color: var(--white);
   border-radius: 0 0 12px 12px;
+}
+.featured P{
+  margin: 0;
 }
 
 .prev, .next {
@@ -420,7 +512,7 @@ p {
 
 /* Footer */
 .footer {
-  background: var(--primary);
+  background: #0d1729;
   color: var(--white);
   padding: 2rem 1rem;
   text-align: center;
