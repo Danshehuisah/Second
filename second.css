@@ -343,8 +343,8 @@ p {
 
 .services h2, .services h3 {
   /* color: #0d1729; */
-  color: #00161a;
-  accent-color: ;
+  /* color: #00161a; */
+  color: rgb(231, 231, 231);
 }
 
 .service-cards .card {
