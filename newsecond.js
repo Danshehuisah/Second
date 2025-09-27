@@ -9,7 +9,28 @@ if (menuBtn && nav) {
     // document.body.style.overflow = isOpen ? 'hidden' : '';
   });
 }
+let navLinks = document.querySelectorAll(".nav-link");
 
+
+navLinks.forEach((navLink) => {
+  navLink !== 1;
+
+navLink.classList.remove('active');
+      navLink.addEventListener('click', function () {
+        
+          navLink === 1
+
+            if (navLink === 1) {
+              navLink.classList.add("active");              
+            }
+            
+      });
+
+
+});
+
+
+  
 document.addEventListener('click', (event) => {
   const isClickInsideNav = nav.contains(event.target);
 

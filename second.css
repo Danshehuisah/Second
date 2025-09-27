@@ -157,7 +157,12 @@ p {
   z-index: 1;
 }
 
-#primary-nav a:hover{ color: #fff; }
+#primary-nav a:hover{ color: var(--gold-2); }
+
+#primary-nav a.active {
+  color: var(--gold-2);
+  /* text-decoration: 3px underline rgb(153, 105, 16); */
+}
 
 /* Mobile hamburger */
 .dash-container {
@@ -172,9 +177,9 @@ p {
 }
 .dash {
   background-color: #dabe65;
-  width: 70%;
+  width: 75%;
   display: block;
-  margin: 6px;
+  margin: 8px;
   height: 3px;
   transform-origin: left;
   transition: all 0.5s;
@@ -228,7 +233,7 @@ p {
   width: 100%;
   height: 100%;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.541);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.212);
 }
 .about-text span{ 
   color: var(--accent); 
@@ -316,9 +321,16 @@ p {
 /* Services Section */
 .services {
   /* background: var(--white); */
-  background-color: rgba(236, 236, 93, 0.432);
-  /* background-color: #d4af37; */
+  /* background-color: rgba(236, 236, 93, 0.432); */
+  /* background-color: #fff9dc48; */
+  
+  /* background-color: #B2C9CD; */
+  /* background-color: #0d1729; */
+  /* background-color: #636C77; */
+  background-color: #58626D;
   padding: 4rem 1rem;
+  /* border: 2px solid #0d172942; */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.418);
 }
 
 .service-cards {
@@ -329,13 +341,21 @@ p {
   margin: auto;
 }
 
+.services h2, .services h3 {
+  /* color: #0d1729; */
+  color: #00161a;
+  accent-color: ;
+}
+
 .service-cards .card {
-  background: var(--secondary);
+  /* background: var(--secondary); */
+  /* background-color: #3e4555a1; */
+  background-color: rgba(255, 255, 255, 0.329);
   padding: 2rem;
   text-align: center;
   border-radius: 12px;
   transition: 0.3s;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.233);
 }
 
 .service-cards .card:hover {
@@ -345,6 +365,7 @@ p {
 .service-cards img {
   width: 60px;
   margin-bottom: 1rem;
+  /* filter: invert(9%); */
 }
 
 /* Featured Projects Section */
@@ -365,8 +386,6 @@ p {
 .slide {
   display: none; /* hide all slides */
   position: relative;
-  /* max-width: 50%; */
-  /* height: 100%; */
 }
 
 .slide.active {
@@ -376,18 +395,8 @@ p {
 .slide img {
   width: 100%;
   border-radius: 12px;
-  /* position: absolute; */
 }
 
-/* .overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(26, 43, 76, 0.897);
-  color: var(--white);
-  border-radius: 0 0 12px 12px;
-} */
 .featured P{
   margin: 0;
   background-color: #0d1729;
@@ -548,6 +557,7 @@ p {
     width: 0;
     opacity: 0;
   }
+
   .dash-container {
     display: block;
     z-index: 4;
@@ -560,7 +570,6 @@ p {
   background-color: #1a2b4c;
   display: block;
   padding: 5px;
-  /* padding-top: 30px; */
   top: 10px;
   right: 0;
   z-index: 3;
@@ -585,6 +594,10 @@ p {
   padding: 10px;
 }
 
+.open#primary-nav a.active {
+  color: var(--gold-2);
+}
+
 .open#primary-nav ul a:hover {
   color: var(--primary);
   background-color: var(--secondary);
@@ -597,27 +610,10 @@ p {
   
 }
 
-
-/* Toggle with js to display hamburger contents */
-
-.dash{
-
-}
-
-.dash1.rotate {
-  transform: rotate(45deg);
-}
-.dash2.rotate {
-
-}
-.dash3.rotate {
-
-}
-
 }
 
 @media screen and (min-width: 601px){
-  
+
 }
 
 @media screen and (min-width: 901px) {
