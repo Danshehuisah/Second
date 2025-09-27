@@ -325,9 +325,9 @@ p {
   /* background-color: #fff9dc48; */
   
   /* background-color: #B2C9CD; */
-  /* background-color: #0d1729; */
+  background-color: #0d1729be;
   /* background-color: #636C77; */
-  background-color: #58626D;
+  /* background-color: #58626d85; */
   padding: 4rem 1rem;
   /* border: 2px solid #0d172942; */
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.418);
@@ -341,16 +341,22 @@ p {
   margin: auto;
 }
 
+.services h2 {
+  color: #b7952b;
+  color: rgb(194, 194, 194);
+}
+
 .services h2, .services h3 {
   /* color: #0d1729; */
   /* color: #00161a; */
-  color: rgb(231, 231, 231);
+  /* color: rgb(243, 148, 60); */
+  /* color: #b7952b; */
 }
 
 .service-cards .card {
   /* background: var(--secondary); */
   /* background-color: #3e4555a1; */
-  background-color: rgba(255, 255, 255, 0.329);
+  background-color: rgba(255, 255, 255, 0.616);
   padding: 2rem;
   text-align: center;
   border-radius: 12px;
@@ -365,7 +371,7 @@ p {
 .service-cards img {
   width: 60px;
   margin-bottom: 1rem;
-  /* filter: invert(9%); */
+  /* filter: invert(88%); */
 }
 
 /* Featured Projects Section */
