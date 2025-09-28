@@ -475,7 +475,7 @@ p {
 }
 
 .cross-line {
-  height: 35px;
+  height: 30px;
   width: 100%;
   background-color: #b38e20;
   /* background-color: #a18f56; */
@@ -499,14 +499,14 @@ marquee {
   /* border: 2px solid; */
   margin: 0;
   padding: 0;
-  /* line-height: 24px; */
-  -webkit-text-stroke: 0.6px rgb(255, 255, 255);
-  /* word-spacing: 8px; */
+  line-height: 18px;
+  -webkit-text-stroke: 0.8px rgb(255, 255, 255);
+  word-spacing: 8px;
   letter-spacing: 1px;
   /* font-size: 15px; */
-  /* font-size: clamp(1.5rem, 2vw, 1.5rem); */
+  font-size: clamp(1rem, 2vw, 1.5rem);
   /* color: rgba(255, 255, 255, 0); */
-  color: rgb(0, 0, 0);
+  color: rgba(0, 0, 0, 0.568);
   height: 100%;
   text-transform: uppercase;
   /* align-self: center; */
