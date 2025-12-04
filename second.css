@@ -232,7 +232,7 @@ p {
   min-width: 280px;
   transform: translateX(-100%);
   opacity: 0;
-  transition: all 1s ease-out;
+  transition: all 0.5s ease-out;
 }
 
 .about-text ul {
@@ -250,7 +250,7 @@ p {
   min-width: 280px;
   transform: translateX(100%);
   opacity: 0;
-  transition: all 1s ease-out;
+  transition: all 0.5s ease-out;
 }
 
 .about-image img {
