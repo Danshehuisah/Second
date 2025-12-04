@@ -230,7 +230,7 @@ p {
 .about-text {
   flex: 1;
   min-width: 280px;
-  transform: translateX(-100%);
+  transform: translateY(45%);
   opacity: 0;
   transition: all 0.5s ease-out;
 }
@@ -248,7 +248,7 @@ p {
 .about-image {
   flex: 1;
   min-width: 280px;
-  transform: translateX(100%);
+  transform: translateY(45%);
   opacity: 0;
   transition: all 0.5s ease-out;
 }
@@ -496,21 +496,21 @@ hr {
 }
 
 .one {
-  transform: translateX(100%);
+  transform: translateY(45%);
   opacity: 0.5;
-  transition: all 1s;
+  transition: all 0.5s;
 }
 
 .two {
-  transform: translateX(100%);
+  transform: translateY(45%);
   opacity: 0.5;
-  transition: all 1.2s;
+  transition: all 0.7s;
 }
 
 .three {
-  transform: translateX(100%);
+  transform: translateY(45%);
   opacity: 0.5;
-  transition: all 1.5s;
+  transition: all 1s;
 }
 /* CTA Banner */
 .cta-banner {

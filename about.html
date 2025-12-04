@@ -1,15 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ABOUT PROXIMA</title>
-    <link rel="stylesheet" href="second.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proxima Design Studio Ltd.</title>
+  <link rel="stylesheet" href="second.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- SEO -->
+  <meta name="description" content="Proxima Design Studio Ltd delivers innovative architectural, landscape, interior design and visualization services. Transforming spaces with creativity and precision.">
+
+  <!-- Social share -->
+  <meta property="og:title" content="Proxima Design Studio Ltd">
+  <meta property="og:description" content="Innovative architectural, landscape and interior design solutions.">
+  <meta property="og:image" content="IMAGES/logo.jpg">
+  <meta property="og:type" content="website">
+
 </head>
 <body>
 
+  <!-- Hero Section -->
+  <header class="hero">
+    <video autoplay muted loop playsinline class="hero-video" poster="New Designs/Luxury Restaurant 2.jpg">
+      <source src="VIDEOS/Project 1.webm" type="video/mp4">
+      <img src="New Designs/Efab 2.jpg" alt="Proxima Design">
+    </video>
     <!-- Top bar: logo + nav + hamburger -->
-    <div class="nav-and-logo" role="navigation" aria-label="Primary" style="position: relative">
+    <div class="nav-and-logo" role="navigation" aria-label="Primary">
       <div class="pic-container">
         <img src="IMAGES/logo.jpg" width="100" height="50" alt="Proxima Design Studio logo" id="home">
       </div>
@@ -22,106 +41,180 @@
 
       <nav id="primary-nav">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="#contact" class="nav-link">Contact Us</a></li>
         </ul>
       </nav>
     </div>
 
-     <section class="about" id="about">
-    <div class="container">
+    
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Designing Your Future</h1>
+      <p>Where Creativity Meets Functionality</p>
+      <a href="https://wa.me/2348036862490?text=Hello%20Proxima%20I%20am%20interested%20in%20your%20services" class="btn">Start Your Project</a>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <!-- <div class="about-container"> -->
+      <div class="container">
+        <div class="about-text anim">
+          <h2>About Us</h2>
+          <p>
+            <span>Proxima</span> Design Studio Ltd. is a forward-thinking architectural, landscape, and interior design company.
+            We bring your vision to life with innovation, precision, and expertise.
+          </p>
+          <ul>
+            <li>Innovative Solutions</li>
+            <li>Collaborative Process</li>
+            <li>Attention to Detail</li>
+            <li>Creative Expertise</li>
+          </ul>
+          <br>
+          <a href="about.html"> 
+            <button class="btn" style="color: #101e36;"> More about us </button> 
+          </a>
+        </div>
         <div class="about-image anim">
-        <img src="IMAGES/AI PIC.jpg" alt="Our Team">
-      </div>
-
-      <div class="about-text anim">
-        <h2>About Us</h2>
-        <p>
-          <span>Proxima</span> Design Studio Ltd. is a forward-thinking architectural, landscape, and interior design company.
-          We bring your vision to life with innovation, precision, and expertise.
-        </p>
-        <ul>
-          <li>Innovative Solutions</li>
-          <li>Collaborative Process</li>
-          <li>Attention to Detail</li>
-          <li>Creative Expertise</li>
-        </ul>
-      </div>
-      
-    </div>
+          <img src="IMAGES/AI PIC.jpg" alt="Our Team">
+        </div>
+      <!-- </div> -->
   </section>
-
-  <section class="CEO-info">
-    <h1>About the CEO/MD</h1>
-    
-    <div class="container">
-    <div class="ceo-img-container">
-        <div class="back-overlay"></div>
-        <img src="IMAGES/ceo pic.jpg" alt="CEO-PIC" style="width: 100%; height: 100%;">
-    </div>
-    
-
-    <div class="ceo-text">
-        
-        <P><span>Arc Ajanah Nasiru Abubakar, MNIA,</span> a seasoned consultant architect with over 15 years of experience in driving impactful projects. As a certified member of the Nigerian Institute of Architects (NIA) and the Architects Registration Council of Nigeria (ARCON), I've made significant contributions to sustainable architecture. My expertise spans the entire project lifecycle, from preliminary sketch design to post-construction stages, ensuring seamless execution and delivery.</P>
-    </div>
-    </div>
-    <div class="CEO-competence ">
-        <div class="arch-services ceo-serv">
-            <h3>Architectural Services</h3>
-            <p>
-            <ul>
-                <li>Preliminary sketch design and concept development</li>
-                <li>Design development and refinement</li> 
-                <li>Construction documentation and tendering</li>
-                <li>Contract administration and site supervision</li>
-                <li>Post-construction evaluation and facility management</li>
-            </ul>
-            </p>
-        </div>
-
-        <div class="pro-management ceo-serv">
-            <h3>Project Management</h3>
-            <p>With a strong background in managing projects from conception to completion, I'm currently pursuing a project management certification to further enhance my skill. My expertise includes;
-            <ul>
-                <li>Project planning, execution and delivery</li>
-            <li>Risk management and mitigation</li> 
-            <li>Team Collaboration and leadership</li>
-            <li>Time and cost management</li>
-            <li>Quality assurance and control</li>
-            </ul>
-            </p>
-        </div>
-
-        <div class="sustainable-arch ceo-serv">
-            <h3>Sustainable Architecture</h3>
-            <p>I'm passionate about designing eco-friendly buildings and spaces that promote environmentally responsible construction methods. My expertise includes:
-            <ul>
-                <li>Implementing green technologies and practices</li>
-                <li>Designing energy-efficient buildings</li> 
-                <li>Promoting sustainable materials and construction techniques</li>
-            </ul>
-            <br>
-            <p>With my extensive experience and ongoing professional development, I'm committed to delivering high-quality results and driving success in my projects</p>
-            </p>
-        </div>
-
-    </div>
-
-
-  </section>
-
-  <div class="review">
-    <img src="IMAGES/ceo-review.png" alt="ceo-review.png" style="width: 100%;">
   </div>
-  <hr>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <h2>Our Services</h2>
+    <div class="service-cards">
+      <div class="card">
+        <img src="SVG/noun-architecture-2379268.svg" alt="Architecture">
+        <h3>Architectural Design</h3>
+      </div>
+      <div class="card">
+        <img src="SVG/noun-community-building-7866948.svg" alt="Landscape">
+        <h3>Landscape Design</h3>
+      </div>
+      <div class="card">
+        <img src="SVG/noun-interior-design-7841548 (1).svg" alt="Interior">
+        <h3>Interior Design</h3>
+      </div>
+      <div class="card">
+        <img src="SVG/noun-light-bulb-7880693.svg" alt="Visualization">
+        <h3>Design Visualization</h3>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Featured Project Section -->
+  <section class="featured ">
+  <h2>Some Featured Projects</h2>
+  <div class="slider">
+    <div class="slide active">
+      <img src="okene design/okene1.png" alt="Okene Design">
+      <!-- <div class="overlay"> -->
+        <p class="title">Residential Remodeling</p>
+        <p class="location">Okene, Kogi State</p>
+      <!-- </div> -->
+    </div>
+    <div class="slide">
+      <img src="New Designs/4-Bedroom Duplex.png" alt="4-Bedroom Duplex">
+      <!-- <div class="overlay"> -->
+        <p class="title">4-Bedroom Duplex</p>
+        <p class="location">Ikorodu LGA, Lagos State</p>
+      <!-- </div> -->
+    </div>
+    <div class="slide">
+      <img src="New Designs/Efab 2.jpg" alt="Efab" >
+      <!-- <div class="overlay">  -->
+        <p class="title">Efab Shopping Mall</p>
+        <p class="location">Gwagwalada, Abuja</p>
+      <!-- </div> -->
+    </div>
+    <div class="slide">
+      <img src="New Designs/Luxury Restaurant 2.jpg" alt="Restaurant">
+      <!-- <div class="overlay">  -->
+        <p class="title">Luxury Restaurant</p>
+        <p class="location">Area 10 Shopping Complex, Abuja</p>
+      <!-- </div> -->
+    </div>
+  </div>
+
+  <!-- Slider Controls -->
+  <button class="prev">❮</button>
+  <button class="next">❯</button>
+</section>
 
 
 
 
-   <!-- Footer -->
+
+
+  <!-- Reliability Section -->
+  <section class="reliability">
+    <h2>Reliability You Can Trust</h2>
+    <div class="reliability-cards">
+      <div class="card one anim">
+        <h3>20+ Years of Experience</h3>
+        <p>Proxima Design Studio Ltd. has been delivering innovative and reliable solutions for over a decade.</p>
+      </div>
+      <div class="card two anim">
+        <h3>20+ Completed Projects</h3>
+        <p>Our expertise is demonstrated in successfully completed projects across multiple sectors.</p>
+      </div>
+      <div class="card three anim">
+        <h3>Registered with CAC</h3>
+        <p>We are fully recognized and registered with the Corporate Affairs Commission of Nigeria.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Banner -->
+  <section class="cta-banner">
+    <h2>Let’s Transform Your Space Today</h2>
+    <a href="#contact" class="btn">Get in Touch</a>
+  </section>
+  <div class="cross-line">
+    <marquee behavior="alternate" direction="">Proxima Design Studio</marquee>
+  </div>
+  
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial-cards">
+      <div class="card">
+        <p>"Proxima brought my vision to life with unmatched creativity!"</p>
+        <h4>- John Doe, Abuja</h4>
+      </div>
+      <div class="card">
+        <p>"Their professionalism and eye for detail are exceptional."</p>
+        <h4>- Abubakar Suleiman, Abuja</h4>
+      </div>
+      <div class="card">
+        <p>"A team that truly understands functionality and aesthetics."</p>
+        <h4>- Michael Johnson, Port Harcourt</h4>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" id="name">
+      <input type="email" placeholder="Your Email" id="email">
+      <textarea placeholder="Your Message" id="message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
   <footer class="footer">
     <p>&copy; 2025 Proxima Design Studio Ltd. | All Rights Reserved</p>
     <div class="socials">
@@ -130,9 +223,8 @@
 
       <a href="mailto:abumujahid1709@gmail.com?subject=Hello&body=I%20am%20interested%20in%20your%20services"><img src="SVG/noun-email-7979299.svg" alt="Email"></a>
     </div>
-    
+  </footer>
 
-
-    <script src="newsecond.js"></script>
+  <script src="newsecond.js"></script>
 </body>
 </html>
