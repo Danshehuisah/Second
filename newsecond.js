@@ -9,26 +9,6 @@ if (menuBtn && nav) {
     // document.body.style.overflow = isOpen ? 'hidden' : '';
   });
 }
-let navLinks = document.querySelectorAll(".nav-link");
-
-
-navLinks.forEach((navLink) => {
-  navLink !== 1;
-
-navLink.classList.remove('active');
-      navLink.addEventListener('click', function () {
-        
-          navLink === 1
-
-            if (navLink === 1) {
-              navLink.classList.add("active");              
-            }
-            
-      });
-
-
-});
-
 
   
 document.addEventListener('click', (event) => {
@@ -74,3 +54,35 @@ const message = document.querySelector('#message');
 
 // Which platform will be best for delivery of messages
 
+function revealOnScroll () {
+    const reveal = document.querySelectorAll('.anim');
+    reveal.forEach(section  => {
+        const windowHeight = window.innerHeight;
+        const sectionTop = section.getBoundingClientRect().top;
+        const revealPoint = 100;
+        if (sectionTop < windowHeight - revealPoint) {
+            section.classList.add('sect-anim');
+        } else {
+            section.classList.remove('sect-anim');
+        }
+    })
+}
+
+window.addEventListener('load', revealOnScroll);
+window.addEventListener('scroll', revealOnScroll);
+
+
+let preview = document.querySelector('.preview')[0];
+// preview = true;
+let img = document.querySelector('#img');
+let photoInput = document.querySelector('#photoInput');
+
+photoInput.addEventListener('change', function () {
+    const file = this.files[0];
+    if (file) {
+        const reader = new FileReader();
+        reader.addEventListener('load', function () {
+            img.src = reader.result;
+        })
+    }
+});
