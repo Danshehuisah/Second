@@ -137,9 +137,10 @@ p {
 /* Top bar */
 .nav-and-logo{
   position: absolute;
-  top: 0; 
+  top: 0px; 
   left: 0; 
   right: 0;
+  /* bottom: 0; */
   display: flex; 
   align-items: center; 
   justify-content: space-between;
@@ -230,9 +231,9 @@ p {
 .about-text {
   flex: 1;
   min-width: 280px;
-  transform: translateY(45%);
+  /* transform: translateY(45%);
   opacity: 0;
-  transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out; */
 }
 
 .about-text ul {
@@ -248,9 +249,9 @@ p {
 .about-image {
   flex: 1;
   min-width: 280px;
-  transform: translateY(45%);
+  /* transform: translateY(45%);
   opacity: 0;
-  transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out; */
 }
 
 .about-image img {
@@ -269,24 +270,37 @@ p {
   background-color: var(--primary);
   color: var(--white);
   position: relative;
+  border: 2px solid;
+  margin-bottom: 0;
 }
 
+.CEO-grid {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); */
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  padding: 1rem;
+  /* border: 2px solid; */
+}
 .ceo-img-container img {
-  width: 100%;
+  /* width: 100%; */
+  max-width: 400px;
   height: 100%;
+   
+  margin: 5px auto;
   border-radius: 12px;
   box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.548);
 }
 .back-overlay {
-  background: var(--secondary);
+  background: var(--accent);
   position: absolute;
-  top: -7px;
+  top: -1px;
   /* left: 20px; */
   margin: 0 auto;
-  border-radius: 50px;
-  display: block;
+  border-radius: 20px;
+  /* display: block; */
   width: 100%;
-  height: 10%;
+  height: 110px;
   z-index: -1;
 }
 .ceo-img-container  {
@@ -294,13 +308,18 @@ p {
   min-width: 280px;
   position: relative;
   z-index: 1;
-  width: 100%;
-  height: 100%;
+  /* width: 100%;
+  height: 100%; */
+  margin: auto;
+  /* border: 2px solid; */
 }
 
-.CEO-info h1 {
+
+#meet-ceo {
   color: var(--white);
   text-align: center;
+  margin: 0;
+  /* border: 2px solid; */
 }
  .CEO-info h2, .CEO-info h3 {
   color: var(--primary);
@@ -312,6 +331,7 @@ p {
   flex: 1;
   min-width: 280px;
   text-align: justify;  
+  /* border: 2px solid; */
 }
 .CEO-info span{ 
   color: var(--accent); 
@@ -330,12 +350,17 @@ p {
     list-style-type: none;
   }
 
+  .CEO-competence li {
+    text-align: left;
+    line-height: 40px;
+  }
+
 
  .CEO-info li::before {
   content: "✔ ";
   color: var(--accent);
   font-weight: bold;
-  z-index: 6;
+  z-index: 2;
 }
 
 .ceo-serv {
@@ -356,13 +381,29 @@ p {
 }
 .ceo-serv p, ul {
   position: relative;
-  z-index: 5;
+  z-index: 2;
 }
 hr {
   width: 100%;
   height: 5px;
   border: none;
   background-color: rgb(122, 24, 24);
+}
+
+/* #dark-blue-hr {
+  width: 100%;
+  height: 5px;
+  border: none;
+  background: #0d1729;
+  margin-top: px;
+  z-index: 3;
+} */
+
+#black-hr {
+  width: 100%;
+  height: 5px;
+  border: none;
+  background: rgb(112, 80, 11);
 }
 
 /* Services Section */
@@ -526,31 +567,40 @@ hr {
 }
 
 .cross-line {
-  height: 30px;
+  height: 50px;
   width: 100%;
-  background-color: #b38e20;
+  /* background-color: #b38e20; */
+  background-color: var(--primary);
   margin: 50px 0px;
   outline: 5px solid var(--white);
-  border-top: 5px solid navy;
-  border-bottom: 5px solid navy;
+  border-top: 5px solid var(--accent);
+  border-bottom: 5px solid var(--accent);
   border-left: none;
   border-right: none;
   display: flex;
+  border-radius: 60px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
  
 }
 marquee {
-  font-weight: 500;
-  margin: 0;
-  padding: 0;
+  font-weight: 650;
+  /* margin: 0; */
+  /* padding: 0; */
   line-height: 18px;
   /* -webkit-text-stroke: 0.8px rgba(255, 255, 255, 0); */
   word-spacing: 8px;
-  letter-spacing: 1px;
+  letter-spacing: 3px;
   /* font-size: 15px; */
-  font-size: clamp(1rem, 2vw, 1.5rem);
-  color: rgb(12, 2, 99);
-  height: 100%;
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  /* color: rgb(12, 2, 99); */
+  color: var(--secondary);
+  /* width: 90%; */
+  /* height: 100%; */
   text-transform: uppercase;
+  border-radius: 60px;
   
 }
 
@@ -559,19 +609,22 @@ marquee {
   padding: 4rem 1rem;
   /* background: var(--white); */
   background-color: #0d1729a6;
+  background-image: url(IMAGES/logo-upside-down.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
 }
-
 .testimonial-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
+  gap: 1.7rem;
   max-width: 1100px;
   margin: auto;
 }
 
 .testimonial-cards .card {
   /* background: #1a2b4c33; */
-  background-color: rgba(255, 255, 255, 0.705); 
+  background-color: rgba(255, 255, 255, 0.788); 
   padding: 2rem;
   border-radius: 12px;
   font-style: italic;
@@ -640,6 +693,11 @@ marquee {
   margin: 0 0.5rem;
   filter: invert(100%);
 }
+
+ footer span {
+  color: var(--accent); 
+  font-weight: 600;
+ }
 
 
 

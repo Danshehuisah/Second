@@ -19,7 +19,15 @@ document.addEventListener('click', (event) => {
     nav.classList.remove('open');
     menuBtn.classList.remove('rotate');
   }
-})
+});
+const navLinks = document.querySelectorAll('#primary-nav');
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    nav.classList.remove('open');
+    menuBtn.classList.remove('rotate');
+    menuBtn.setAttribute('aria-expanded', 'false');
+});
+});
 
 
 let currentIndex = 0;
