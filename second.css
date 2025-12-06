@@ -284,9 +284,9 @@ p {
 }
 .ceo-img-container img {
   /* width: 100%; */
-  max-width: 400px;
+  max-width: 280px;
   height: 100%;
-   
+  position: relative;
   margin: 5px auto;
   border-radius: 12px;
   box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.548);
