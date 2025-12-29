@@ -1,10 +1,3 @@
-<?php
-
-// include('heading.php');
-
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proxima Admin Page</title>
     <!-- <link rel="stylesheet" href="admin.css"> -->
-    <link rel="stylesheet" href="/second.css">
+    <!-- <link rel="stylesheet" href="/second.css"> -->
+     <link rel="stylesheet" href="admin.css">
 </head>
 <body>
     <div class="nav-and-logo" role="navigation" aria-label="Primary">
@@ -30,16 +24,7 @@
 
       <nav id="primary-nav">
         <ul>
-            <li><div class="pro-pic">
-                <form action="heading.php" method="POST" enctype="multipart/form-data">
-                  <label for="photoInput">
-                    <!-- <img src="/IMAGES/logo.jpg" alt="profile-pic"> -->
-                     <div class="preview"><img src="" id="img" alt="Profile-pic" width="150"></div>
-                </label>
-                <input type="file" id="photoInput" accept="image/*" name="photoInput">
-                <input type="submit" value="submit" name="submit">
-                </form>
-            </div></li>
+            
           <li><a href="#home" class="nav-link">Home</a></li>
           <li><a href="#" class="nav-link">Messages</a></li>
           <li><a href="#" class="nav-link">Featured Projects</a></li>
@@ -50,7 +35,25 @@
 
     <!-- <h1 class="welcome">WELCOME TO <span>PROXIMA</span> </h1> -->
       <!-- <h2><span>ADMIN PAGE</span></h2> -->
+       <form action="heading.php" method="POST" enctype="multipart/form-data">
     
+            <div class="pro-pic">
+                
+                  <label for="photoInput">
+
+
+                     <div class="preview">
+                      <!-- <img src="uploads/<?php echo htmlspecialchars($profilePic); ?>" id="img" alt="Profile-pic" width="150"> -->
+                       <img src="hero-pic.jpg" alt="hero">
+                    </div>
+
+                </label>
+                <input type="file" id="photoInput" accept="image/*" name="photoInput">
+                            </div>
+                <input type="submit" id="submit" value="submit" name="submit">
+                </form>
+
+
     <script src="/newsecond.js"></script>
 </body>
 </html>

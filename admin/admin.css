@@ -126,7 +126,7 @@ h2 span{
     color: var(--accent);
 }
 
-#login-button:hover{
+#login-button:hover {
     color: #1a2b4c;
     background: #d4af37;
     border-color: var(--primary);
@@ -138,10 +138,6 @@ h2 span{
     margin: 30px auto;
     
 }
-
-
-
-
 
 h1, h2, h3 {
   font-weight: 700;
@@ -183,5 +179,23 @@ p {
 }
 
 #photoInput {
-  display: none;
+  /* display: none; */
+}
+
+.pro-pic {
+    width: 50%;
+    height: 40vh;
+    border: 1px solid;
+}
+
+.pro-pic img {
+    width: 100%;
+}
+
+#submit {
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    margin: 20px;
+    cursor: pointer;
 }

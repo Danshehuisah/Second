@@ -76,21 +76,44 @@ function revealOnScroll () {
     })
 }
 
+
 window.addEventListener('load', revealOnScroll);
 window.addEventListener('scroll', revealOnScroll);
 
 
-let preview = document.querySelector('.preview')[0];
-// preview = true;
-let img = document.querySelector('#img');
-let photoInput = document.querySelector('#photoInput');
 
-photoInput.addEventListener('change', function () {
+
+
+
+
+
+
+
+
+// window.addEventListener('DOMContentLoaded', function () {
+//   const img = document.querySelector('#img');
+//   const photoInput = document.querySelector('#photoInput');
+
+  // Load saved photo
+  // const savedPhoto = localStorage.getItem('userPhoto');
+  // if (savedPhoto) {
+  //   img.src = savedPhoto;
+  //   img.classList.add('loaded');
+  // }
+
+  // Preview new photo
+  photoInput.addEventListener('change', function () {
     const file = this.files[0];
-    if (file) {
-        const reader = new FileReader();
-        reader.addEventListener('load', function () {
-            img.src = reader.result;
-        })
-    }
-});
+
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = function () {
+      img.src = reader.result;
+      // img.classList.add('loaded');
+      // localStorage.setItem('userPhoto', reader.result);
+    };
+
+    reader.readAsDataURL(file);
+  });
+// });
