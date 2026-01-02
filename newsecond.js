@@ -60,39 +60,33 @@ const email = document.querySelector('#email');
 const message = document.querySelector('#message');
 
 
-// Which platform will be best for delivery of messages
 
 function revealOnScroll () {
-    const reveal = document.querySelectorAll('.anim');
-    reveal.forEach(section  => {
-        const windowHeight = window.innerHeight;
-        const sectionTop = section.getBoundingClientRect().top;
-        const revealPoint = 100;
-        if (sectionTop < windowHeight - revealPoint) {
-            section.classList.add('sect-anim');
-        } else {
-            section.classList.remove('sect-anim');
-        }
-    })
+  const animElements = document.querySelectorAll('.anim');
+  animElements.forEach(animElement => {
+    const windowHeight = window.innerHeight;
+    const sectionTop = animElement.getBoundingClientRect().top;
+    if (windowHeight > sectionTop) {
+      animElement.classList.add('sect-anim');
+    } else {
+      animElement.classList.remove('sect-anim');
+    }
+  })
 }
 
 
 window.addEventListener('load', revealOnScroll);
 window.addEventListener('scroll', revealOnScroll);
 
-
-
-
-
-
-
-
-
+window.addEventListener('scroll', () => {
+  const topNav = document.querySelector('.nav-and-logo');
+  topNav.style.height = '70px';
+})
 
 
 // window.addEventListener('DOMContentLoaded', function () {
 //   const img = document.querySelector('#img');
-//   const photoInput = document.querySelector('#photoInput');
+  const photoInput = document.querySelector('#photoInput');
 
   // Load saved photo
   // const savedPhoto = localStorage.getItem('userPhoto');
@@ -102,18 +96,30 @@ window.addEventListener('scroll', revealOnScroll);
   // }
 
   // Preview new photo
-  photoInput.addEventListener('change', function () {
-    const file = this.files[0];
+  // photoInput.addEventListener('change', function () {
+  //   const file = this.files[0];
 
-    if (!file) return;
+  //   if (!file) return;
 
-    const reader = new FileReader();
-    reader.onload = function () {
-      img.src = reader.result;
-      // img.classList.add('loaded');
-      // localStorage.setItem('userPhoto', reader.result);
-    };
+  //   const reader = new FileReader();
+  //   reader.onload = function () {
+  //     img.src = reader.result;
+  //     img.classList.add('loaded');
+  //     localStorage.setItem('userPhoto', reader.result);
+  //   };
 
-    reader.readAsDataURL(file);
-  });
+  //   reader.readAsDataURL(file);
+  // });
 // });
+
+const theNavLinks = document.querySelectorAll('#primary-nav ul a');
+
+theNavLinks.forEach(clickNav => {
+  clickNav.addEventListener('click', () => {
+      theNavLinks.forEach(addToClicked =>
+        addToClicked.classList.remove('active'));
+        clickNav.classList.add('active');
+  })
+}
+
+)
